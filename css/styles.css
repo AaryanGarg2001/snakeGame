@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Game_bg{
+    background: url("../img/snakebackground.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(#7febb5,#edc75f);
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+.score{
+    position: absolute;
+    top:9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.head{
+    background-color: #ff6257;
+    border: 1px solid #ffdaa6;
+    border-radius: 9px;
+    transform: scale(1.02);
+}
+
+.food{
+    background-color: #d3f041;
+    border-radius: 12px;
+}
+
+.body{
+    background-color: #d9804c;
+    border: 1px solid #ffdaa6;
+    border-radius: 9px;
+}
